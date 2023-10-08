@@ -11,11 +11,11 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     <div class="-my-8 divide-y-2 divide-gray-100">
 
-                        {{-- @foreach ($posts as $post)
+                         @foreach ($posts as $post)
                             <div class="flex flex-wrap py-8 md:flex-nowrap">
                                 <div class="flex flex-col flex-shrink-0 mb-6 md:w-64 md:mb-0">
                                     @if($post->image)
-                                        <img src="{{ asset('uploads/' . $post->image) }}" width="100" height="100">
+                                        <img src="{{ asset('storage/uploads/' . $post->image) }}" width="100" height="100">
                                     @else
                                         <img src="{{ asset('no_image.jpg') }}" width="100" height="100">
                                     @endif
@@ -49,7 +49,7 @@
                                     </x-nav-link>
                                 </div>
                             </div>
-                        @endforeach --}}
+                        @endforeach
 
                     </div>
                 </div>
